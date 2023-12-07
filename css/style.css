@@ -7,18 +7,20 @@
 }
 /* fine reset */
 
-
 body {
     font-family: 'Nunito', sans-serif;
 }
 
+/* struttura container */
 .container {
     width: 70%;
     margin: auto;
     padding-top: 40px;
     text-align: center;
 }
+/* fine struttura container */
 
+/* titolo e paragrafo */
 h1 {
     color: #E53170;
     font-weight: 1000;
@@ -28,6 +30,8 @@ h1 {
 p {
     margin-bottom: 50px;
 }
+/*fine titolo e paragrafo */
+
 
 /* clearfix */
 .clearfix::after {
@@ -39,12 +43,6 @@ p {
 
 
 /* struttura cards */
-img {
-    width: 120px;
-    float: left;
-    margin-right: 16px;
-}
-
 .row .column {
     width: calc((100% / 3) - (72px / 3));
     float: left;
@@ -54,6 +52,19 @@ img {
     box-shadow: 0 0 10px rgba(0, 0, 0, 1);
 }
 
+.column:nth-of-type(2), .column:nth-of-type(5) {
+    margin-left: 36px;
+    margin-right: 36px;
+}
+
+img {
+    width: 120px;
+    float: left;
+    margin-right: 16px;
+}
+/* fine struttura cards */
+
+/* struttura info */
 .info {
     text-align: left;
     padding: 16px;
@@ -72,10 +83,4 @@ h2 {
 .email {
     color: #43C3FB;
 }
-
-/* fine struttura cards */
-
-.column:nth-of-type(2), .column:nth-of-type(5) {
-    margin-left: 36px;
-    margin-right: 36px;
-}
+/* fine struttura info */
